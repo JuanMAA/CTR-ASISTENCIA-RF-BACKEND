@@ -58,6 +58,42 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
+### Configuration of Environment Variables
+
+This project relies on specific environment variables for its configuration. Below, you'll find details on the necessary variables and their purposes:
+
+- `PORT`: This environment variable specifies the port on which the Nest.js service will run. Set it to `3050`.
+
+- `DATABASE_HOST`: This variable defines the host address or connection string for the database. Use `dpg-ck6v9088elhc73eol440-a` as the value.
+
+- `DATABASE_PASSWORD`: Please provide the appropriate database password here. For example, `your_database_password`.
+
+- `DATABASE_NAME`: Specify the name of the database as `notes_qvh9`.
+
+- `DATABASE_USER`: Set the database user to `admin`.
+
+- `DATABASE_PORT`: Define the database port, typically a numerical value. Use `fng5nMEXd3fU9FvVq0CrwLnCHHkFhsDo` as an example.
+
+- `DATABASE_SYNCHRONIZE`: This boolean variable controls whether the database schema should be automatically synchronized with the application's entities. Set it to `true` to enable automatic synchronization.
+
+- `ORIGIN_CORS`: Describe the allowed origins for Cross-Origin Resource Sharing (CORS) in this variable. You can provide a description of the allowed websites or origins here, e.g., "Website enabled by CORS."
+
+To configure these environment variables, follow these steps:
+
+1. Create a file named `.env` in the root of the Nest.js project.
+
+2. Open the `.env` file and define the environment variables with their respective values. For example:
+
+```markdown
+PORT=3050
+DATABASE_HOST=
+DATABASE_PASSWORD=
+DATABASE_NAME=
+DATABASE_USER=
+DATABASE_PORT=
+DATABASE_SYNCHRONIZE=
+ORIGIN_CORS=
+
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
